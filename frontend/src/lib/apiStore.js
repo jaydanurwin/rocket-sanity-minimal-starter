@@ -1,4 +1,4 @@
-import {client} from './sanityClient'
+import {client} from './sanityClient.js';
 
 class Store {
   async getAllPosts() {
@@ -7,6 +7,4 @@ class Store {
     return result;
   }
 }
-const apiStore = new Store();
-
-export default apiStore;
+export const apiStore = new Store();
