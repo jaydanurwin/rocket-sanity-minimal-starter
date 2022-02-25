@@ -1,17 +1,17 @@
 <script type="module" server>
-/* START - Rocket auto generated - do not touch */
-export const sourceRelativeFilePath = 'index.rocket.html';
-/* END - Rocket auto generated - do not touch */
+  /* START - Rocket auto generated - do not touch */
+  export const sourceRelativeFilePath = 'index.rocket.html';
+  /* END - Rocket auto generated - do not touch */
 
-import {client} from '../src/lib/sanityClient.js';
-const query = `*[_type == 'post']{categories[]->{slug, title}, ...} | order(publishedAt desc)`
-let data = await client.fetch(query).catch(err => console.log(err));
+  import { client } from '../src/lib/sanityClient.js';
+  const query = `*[_type == 'post']{categories[]->{slug, title}, ...} | order(publishedAt desc)`;
+  let data = await client.fetch(query).catch((err) => console.log(err));
 
-const posts = data.map((post) => html`
-  <li><a href=${`/posts/${post.slug.current}`}>
-    ${post.title}
-    </a></li>
-  `);
+  const posts = data.map(
+    (post) => html`
+      <li><a href=${`/posts/${post.slug.current}`}>${post.title}</a></li>
+    `
+  );
 </script>
 
 <!DOCTYPE html>
