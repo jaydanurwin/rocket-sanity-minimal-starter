@@ -3,9 +3,15 @@
 export const sourceRelativeFilePath = 'index.rocket.html';
 /* END - Rocket auto generated - do not touch */
 
-import {apiStore} from '../src/lib/apiStore.js';
-let data = await apiStore.getAllPosts();
-console.log(data);
+import {client} from '../src/lib/sanityClient.js';
+const query = `*[_type == 'post']{categories[]->{slug, title}, ...} | order(publishedAt desc)`
+let data = await client.fetch(query).catch(err => console.log(err));
+
+const posts = data.map((post) => html`
+  <li><a href=${`/posts/${post.slug.current}`}>
+    ${post.title}
+    </a></li>
+  `);
 </script>
 
 <!DOCTYPE html>
@@ -17,5 +23,9 @@ console.log(data);
   </head>
   <body>
     <h1>Rocket + Sanity</h1>
+    <h2>Posts (pages don't work yet)</h2>
+    <ul>
+      ${posts}
+    </ul>
   </body>
 </html>
