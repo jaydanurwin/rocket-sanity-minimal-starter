@@ -1,12 +1,11 @@
-<script type="module" server>
+import { html } from 'lit';
 /* START - Rocket auto generated - do not touch */
 export const sourceRelativeFilePath = 'index.rocket.html';
 /* END - Rocket auto generated - do not touch */
 
 import apiStore from '../src/lib/apiStore.js';
 let data = await apiStore.getAllPosts();
-</script>
-
+const rocketAutoConvertedTemplate0 = html`
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,3 +17,5 @@ let data = await apiStore.getAllPosts();
     <h1>Rocket + Sanity</h1>
   </body>
 </html>
+`;
+export default () => rocketAutoConvertedTemplate0;

@@ -16,6 +16,7 @@
     "@sanity/block-content-to-markdown": "^0.0.5",
     "@sanity/client": "^3.1.0",
     "dotenv": "^16.0.0",
+    "groq": "^2.15.0",
     "lit": "^2.0.0"
   },
   "@rocket/template-name": "Minimal"
