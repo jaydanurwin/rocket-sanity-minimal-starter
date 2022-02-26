@@ -1,5 +1,5 @@
 {
-  "title": "Rocket",
+  "title": "Rocket + Sanity Starter",
   "h1": "Rocket + Sanity",
   "name": "Rocket + Sanity",
   "menuLinkText": "Rocket + Sanity",
@@ -9,20 +9,22 @@
   "level": 0,
   "children": [
     {
-      "name": "about.rocket.html",
-      "menuLinkText": "about.rocket.html",
+      "name": "About",
+      "menuLinkText": "About",
       "url": "/about/",
       "outputRelativeFilePath": "about/index.html",
       "sourceRelativeFilePath": "about.rocket.html",
-      "level": 1
+      "level": 1,
+      "h1": "About"
     },
     {
-      "name": "contact.rocket.html",
-      "menuLinkText": "contact.rocket.html",
+      "name": "Contact",
+      "menuLinkText": "Contact",
       "url": "/contact/",
       "outputRelativeFilePath": "contact/index.html",
       "sourceRelativeFilePath": "contact.rocket.html",
-      "level": 1
+      "level": 1,
+      "h1": "Contact"
     }
   ]
 }
