@@ -30,7 +30,7 @@ export default () => html`
         }
         .home-wrapper {
           display: grid;
-          grid-template-columns: 4fr 6fr;
+          grid-template-columns: 1fr 1fr;
           min-height: 100vh;
         }
         .hero-image {
@@ -38,7 +38,7 @@ export default () => html`
           height: 100%;
           object-fit: cover;
         }
-        .right__section {
+        .left__section {
           padding: 2rem;
           display: flex;
           flex-direction: column;
@@ -48,12 +48,12 @@ export default () => html`
           .home-wrapper {
           grid-template-columns: 1fr;
           }
-          .home-wrapper .left__section {
+          /* .home-wrapper .left__section {
             order: 2;
           }
           .home-wrapper .right__section {
             order: 1;
-          }
+          } */
         }
       </style>
     </head>
@@ -61,17 +61,18 @@ export default () => html`
       <main>
         <div class="home-wrapper">
           <section class="left__section">
-            <picture>
+          <h1>${homePageData.heroTitle}</h1>
+            <p>${homePageData.description}</p>
+            
+          </section>
+          <section class="right__section">
+          <picture>
               <img
                 class="hero-image"
                 src=${`${getSanityImageURL(homePageData.heroImage)}`}
                 alt="${homePageData.heroTite}"
               />
             </picture>
-          </section>
-          <section class="right__section">
-            <h1>${homePageData.heroTitle}</h1>
-            <p>${homePageData.description}</p>
           </section>
         </div>
       </main>
