@@ -6,7 +6,7 @@ const config = {
   dataset: process.env.SANITY_DATASET || 'production',
   token: process.env.SANITY_READ_TOKEN,
   apiVersion: process.env.SANITY_API_VERSION || 'v1',
-  useCdn: true,
+  useCdn: false,
 };
 
 export const client = sanityClient(config);

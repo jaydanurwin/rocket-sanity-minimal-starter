@@ -15,6 +15,7 @@
     "@rocket/engine": "^0.1.0-alpha.11",
     "@sanity/block-content-to-markdown": "^0.0.5",
     "@sanity/client": "^3.1.0",
+    "@sanity/image-url": "^1.0.1",
     "dotenv": "^16.0.0",
     "lit": "^2.0.0"
   },
