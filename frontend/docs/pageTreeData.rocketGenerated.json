@@ -17,6 +17,16 @@
       "outputRelativeFilePath": "blog/index.html",
       "sourceRelativeFilePath": "blog.rocket.js",
       "level": 1
+    },
+    {
+      "title": "About Page",
+      "h1": "About Page",
+      "name": "About Page",
+      "menuLinkText": "About Page",
+      "url": "/about/",
+      "outputRelativeFilePath": "about/index.html",
+      "sourceRelativeFilePath": "about.rocket.js",
+      "level": 1
     }
   ]
 }
