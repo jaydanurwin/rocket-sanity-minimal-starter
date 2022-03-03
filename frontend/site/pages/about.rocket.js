@@ -7,9 +7,7 @@ export { html, baseHead, getSanityImageURL };
 import { client } from '../src/lib/sanityClient.js';
 import { sanityPortableText } from '../src/lib/sanityPortableText.js';
 const query = `*[_type == 'aboutPage' && _id == 'aboutPage']`;
-let response = await client
-  .fetch(query)
-  .catch((err) => console.log(err));
+let response = await client.fetch(query).catch((err) => console.log(err));
 let aboutPageData = response[0];
 
 const title = aboutPageData.title;
@@ -24,7 +22,7 @@ export default () => html`
         body {
           margin: 0;
           padding: 0;
-          font-family: Arial, Helvetica, sans-serif
+          font-family: Arial, Helvetica, sans-serif;
         }
         main {
           margin: 0 auto;
@@ -37,9 +35,7 @@ export default () => html`
       <main>
         <div class="home-wrapper">
           <h1>${aboutPageData.title}</h1>
-          <!-- <div>
-            ${sanityPortableText(aboutPageData.bodyText)}
-          </div> -->
+          ${sanityPortableText(aboutPageData.bodyText)}
         </div>
       </main>
     </body>
