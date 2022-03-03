@@ -11,7 +11,7 @@
     "start": "rocket start --open"
   },
   "devDependencies": {
-    "@rocket/cli": "^0.20.0-alpha.11",
+    "@rocket/cli": "^0.20.0-alpha.13",
     "@rocket/engine": "^0.1.0-alpha.14",
     "@sanity/block-content-to-markdown": "^0.0.5",
     "@sanity/client": "^3.1.0",
