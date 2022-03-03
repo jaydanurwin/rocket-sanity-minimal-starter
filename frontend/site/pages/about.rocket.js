@@ -5,6 +5,7 @@ export { html, baseHead, getSanityImageURL };
 /* END - Rocket auto generated - do not touch */
 
 import { client } from '../src/lib/sanityClient.js';
+import { sanityPortableText } from '../src/lib/sanityPortableText.js';
 const query = `*[_type == 'aboutPage' && _id == 'aboutPage']`;
 let response = await client
   .fetch(query)
@@ -36,6 +37,9 @@ export default () => html`
       <main>
         <div class="home-wrapper">
           <h1>${aboutPageData.title}</h1>
+          <!-- <div>
+            ${sanityPortableText(aboutPageData.bodyText)}
+          </div> -->
         </div>
       </main>
     </body>
