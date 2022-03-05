@@ -1,5 +1,5 @@
 {
-  "title": "Rocket + Sanity Minimal Starter",
+  "title": "Rocket 🚀 + Sanity Minimal Starter",
   "h1": "Rocket 🚀 + Sanity Minimal Starter",
   "name": "Rocket 🚀 + Sanity Minimal Starter",
   "menuLinkText": "Rocket 🚀 + Sanity Minimal Starter",
@@ -28,5 +28,7 @@
       "sourceRelativeFilePath": "about.rocket.js",
       "level": 1
     }
-  ]
+  ],
+  "description": "This is the homepage",
+  "permalink": "/"
 }
