@@ -1,7 +1,6 @@
 import { html } from 'lit';
 
 export function baseHead(data) {
-  console.log(data)
   return html`
     <!-- Global Metadata -->
     <meta charset="utf-8" />
