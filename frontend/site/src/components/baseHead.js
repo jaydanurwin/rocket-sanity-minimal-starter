@@ -1,6 +1,7 @@
 import { html } from 'lit';
 
-export function baseHead({ title, description, permalink, ogImage }) {
+export function baseHead(data) {
+  console.log(data)
   return html`
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -8,16 +9,15 @@ export function baseHead({ title, description, permalink, ogImage }) {
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <!-- Primary Meta Tags -->
-    <title-server-only>${title}</title-server-only>
-    <meta name="title" content="${title}" />
-    <meta name="description" content="${description}" />
+    <title-server-only>${data.title}</title-server-only>
+    <meta name="title" content="${data.title}" />
+    <meta name="description" content="${data.description}" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="${permalink}" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    <meta property="og:image" content="${ogImage}" />
+    <meta property="og:url" content="${data.permalink}" />
+    <meta property="og:title" content="${data.title}" />
+    <meta property="og:description" content="${data.description}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />

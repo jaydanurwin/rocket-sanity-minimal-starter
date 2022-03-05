@@ -1,4 +1,3 @@
-<script type="module" server>
 /* START - Rocket auto generated - do not touch */
 export const sourceRelativeFilePath = 'index.rocket.html';
 import { html, baseHead, getSanityImageURL, layout } from './recursive.data.js';
@@ -15,8 +14,7 @@ let homePageData = homePageResponse[0];
 export const title = `${homePageData.heroTitle}`
 export const description = "This is the homepage"
 export const permalink = "/"
-</script>
-
+const rocketAutoConvertedTemplate0 = html`
 
 <div class="home-wrapper">
   <section class="left__section">
@@ -33,4 +31,5 @@ export const permalink = "/"
       />
     </picture>
   </section>
-</div>
+</div>`;
+export default () => rocketAutoConvertedTemplate0;
