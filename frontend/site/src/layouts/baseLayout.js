@@ -6,7 +6,6 @@ export const layout = data => html`
   <html>
     <head>
       ${baseHead(data)}
-     <link rel="stylesheet" href="../src/css/home.css" />
     </head>
     <body>
       ${data.content()}

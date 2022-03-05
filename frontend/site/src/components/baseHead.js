@@ -1,6 +1,7 @@
 import { html } from 'lit';
+import { baseStyles } from '../styles/baseStyles.js';
 
-export function baseHead(data) {
+export function baseHead({title, description, permalink}) {
   return html`
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -8,21 +9,24 @@ export function baseHead(data) {
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <!-- Primary Meta Tags -->
-    <title-server-only>${data.title}</title-server-only>
-    <meta name="title" content="${data.title}" />
-    <meta name="description" content="${data.description}" />
+    <title-server-only>${title}</title-server-only>
+    <meta name="title" content="${title}" />
+    <meta name="description" content="${description}" />
+
+    <!-- Global Styles -->
+    <style-server-only>
+      ${baseStyles}
+    </style-server-only>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="${data.permalink}" />
-    <meta property="og:title" content="${data.title}" />
-    <meta property="og:description" content="${data.description}" />
+    <meta property="og:url" content="${permalink}" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
   `;
 }
