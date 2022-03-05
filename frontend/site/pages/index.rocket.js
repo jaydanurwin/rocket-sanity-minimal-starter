@@ -47,13 +47,7 @@ export default () => html`
         @media (max-width: 768px) {
           .home-wrapper {
           grid-template-columns: 1fr;
-          }
-          /* .home-wrapper .left__section {
-            order: 2;
-          }
-          .home-wrapper .right__section {
-            order: 1;
-          } */
+          } 
         }
       </style>
     </head>
@@ -67,9 +61,10 @@ export default () => html`
           </section>
           <section class="right__section">
           <picture>
+              <source srcset="${getSanityImageURL(homePageData.heroImage).format('webp').url()}" type="image/webp">  
               <img
                 class="hero-image"
-                src=${`${getSanityImageURL(homePageData.heroImage)}`}
+                src=${`${getSanityImageURL(homePageData.heroImage).url()}`}
                 alt="${homePageData.heroTite}"
               />
             </picture>
