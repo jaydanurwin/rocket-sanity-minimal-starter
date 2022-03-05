@@ -1,9 +1,5 @@
 import { html } from 'lit';
 
-/**
- * @param {{ title: string, description: string, permalink: string, ogImage: string }} options
- * @returns {import('@rocket/engine').TemplateResult}
- */
 export function baseHead({ title, description, permalink, ogImage }) {
   return html`
     <!-- Global Metadata -->
