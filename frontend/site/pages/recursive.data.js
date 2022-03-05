@@ -3,4 +3,3 @@
 export { html } from 'lit';
 export { baseHead } from '../src/components/baseHead.js';
 export {getSanityImageURL} from '../src/utils/helpers.js';
-export {layout} from '../src/layouts/baseLayout.js';

@@ -1,7 +1,7 @@
 /* START - Rocket auto generated - do not touch */
 export const sourceRelativeFilePath = 'blog.rocket.js';
-import { html, baseHead, getSanityImageURL, layout } from './recursive.data.js';
-export { html, baseHead, getSanityImageURL, layout };
+import { html, baseHead, getSanityImageURL } from './recursive.data.js';
+export { html, baseHead, getSanityImageURL };
 /* END - Rocket auto generated - do not touch */
 
 import { client } from '../src/lib/sanityClient.js';
