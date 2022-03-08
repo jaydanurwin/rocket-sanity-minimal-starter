@@ -6,5 +6,6 @@ import {toHTML} from '@portabletext/to-html'
  */
 export function sanityPortableText(portabletext) {
   const convertedPortableText = toHTML(portabletext);
+  // console.log(convertedPortableText);
   return html`<div>${convertedPortableText}</div>`;
 }
