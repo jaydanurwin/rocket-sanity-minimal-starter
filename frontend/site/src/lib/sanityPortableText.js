@@ -1,8 +1,10 @@
+import {html} from 'lit'
 import {toHTML} from '@portabletext/to-html'
 
 /**
  * @param {any} portabletext
  */
 export function sanityPortableText(portabletext) {
-  return toHTML(portabletext);
+  const convertedPortableText = toHTML(portabletext);
+  return html`<div>${convertedPortableText}</div>`;
 }

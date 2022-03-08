@@ -10,9 +10,9 @@ const query = `*[_type == 'aboutPage' && _id == 'aboutPage']`;
 let response = await client.fetch(query).catch((err) => console.log(err));
 let aboutPageData = response[0];
 
-const title = aboutPageData.title;
-const description = aboutPageData.description;
-const permalink = `/`;
+export const title = aboutPageData.title;
+export const description = aboutPageData.description;
+export const permalink = `/`;
 
 export default () => html`
   <html lang="en">
