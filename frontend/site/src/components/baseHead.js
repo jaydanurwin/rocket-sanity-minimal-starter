@@ -6,7 +6,7 @@ export function baseHead({title, description, permalink}) {
     <!-- Global Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
 
     <!-- Primary Meta Tags -->
     <title-server-only>${title}</title-server-only>
