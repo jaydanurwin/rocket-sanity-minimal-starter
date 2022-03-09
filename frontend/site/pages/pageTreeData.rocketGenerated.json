@@ -7,7 +7,20 @@
   "outputRelativeFilePath": "index.html",
   "sourceRelativeFilePath": "index.rocket.js",
   "level": 0,
+  "description": "This is the homepage",
+  "permalink": "/",
   "children": [
+    {
+      "title": "About Page",
+      "h1": "About Page",
+      "name": "About Page",
+      "menuLinkText": "About Page",
+      "url": "/about/",
+      "outputRelativeFilePath": "about/index.html",
+      "sourceRelativeFilePath": "about.rocket.js",
+      "level": 1,
+      "permalink": "/"
+    },
     {
       "title": "Blog ⚠️ IN DEVELOPMENT",
       "h1": "Blog ⚠️ IN DEVELOPMENT",
@@ -17,18 +30,6 @@
       "outputRelativeFilePath": "blog/index.html",
       "sourceRelativeFilePath": "blog.rocket.js",
       "level": 1
-    },
-    {
-      "title": "About Page",
-      "h1": "About Page",
-      "name": "About Page",
-      "menuLinkText": "About Page",
-      "url": "/about/",
-      "outputRelativeFilePath": "about/index.html",
-      "sourceRelativeFilePath": "about.rocket.js",
-      "level": 1
     }
-  ],
-  "description": "This is the homepage",
-  "permalink": "/"
+  ]
 }
