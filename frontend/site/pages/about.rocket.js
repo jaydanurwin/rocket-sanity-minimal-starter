@@ -33,7 +33,7 @@ export default () => html`
     </head>
     <body>
       <main>
-        <div class="home-wrapper">
+        <div>
           <h1>${aboutPageData.title}</h1>
           ${sanityPortableText(aboutPageData.bodyText)}
         </div>
