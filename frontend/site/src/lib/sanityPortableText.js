@@ -1,11 +1,10 @@
-import {html} from 'lit'
 import {toHTML} from '@portabletext/to-html'
+import {unsafeHTML} from 'lit/directives/unsafe-html.js';
 
 /**
  * @param {any} portabletext
  */
 export function sanityPortableText(portabletext) {
   const convertedPortableText = toHTML(portabletext);
-  // console.log(convertedPortableText);
-  return html`<div>${convertedPortableText}</div>`;
+  return unsafeHTML(convertedPortableText);
 }
